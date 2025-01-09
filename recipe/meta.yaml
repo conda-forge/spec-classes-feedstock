@@ -10,25 +10,27 @@ source:
   sha256: 9de3d90951cfadec5892f3f129c77297a4194f9773c37ec91c4bd7bf2b7f5c19
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7.2
+    - python {{ python_min }}
     - setupmeta >=2.7.11
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - cached-property >=1.5.2
     - inflect >=5.0.0
     - lazy-object-proxy >=1.5.0
     - typing_extensions >=4.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - spec_classes
 
