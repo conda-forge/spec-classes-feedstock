@@ -1,16 +1,16 @@
 {% set name = "spec-classes" %}
-{% set version = "1.5.5" %}
+{% set version = "1.5.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/57/75/98889bf4c16f8211777f0be8cea4dc8412a6fd7a809fff9821059a64b906/spec_classes-1.5.5.tar.gz
-  sha256: 9de3d90951cfadec5892f3f129c77297a4194f9773c37ec91c4bd7bf2b7f5c19
+  url: https://files.pythonhosted.org/packages/b9/c8/5d5114e929c0ed7d53527eeba9f75c156b8b0bcca410e5834d5010b51859/spec_classes-1.5.6.tar.gz
+  sha256: 7e7698f49fd88809aad9707c986b52f922a7eb77c7e9e4db42046935548472e0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
