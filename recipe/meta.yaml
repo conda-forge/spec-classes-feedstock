@@ -1,13 +1,13 @@
 {% set name = "spec-classes" %}
-{% set version = "1.5.13" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/d7/27/f108b9d4fd8af204be3154cccbbc2826a9c76866558c476174b5f4e5fb94/spec_classes-{{ version }}.tar.gz
-  sha256: f19b6841d5ee614c6047b06d58f6626546e34bf879d0d8be6d78468121e67c81
+  url: https://files.pythonhosted.org/packages/58/60/aba0e815c174a2da7d3f0e989140fdf9dbbe297ff38c4c56d51e00bdeb7e/spec_classes-{{ version }}.tar.gz
+  sha256: ae4a0a4111dd5318ce032dc75c1e605e187a8c5ae92a255e22f56833a83f7c4d
 
 build:
   number: 0
@@ -22,7 +22,6 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - cached-property >=1.5.2
     - inflect >=5.0.0
     - lazy-object-proxy >=1.5.0
     - typing_extensions >=4.1
