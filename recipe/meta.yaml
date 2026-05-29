@@ -1,13 +1,13 @@
 {% set name = "spec-classes" %}
-{% set version = "1.7.2" %}
+{% set version = "1.7.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/b2/19/111d42dbc077b07e1299f3c5a421b3115da073aa2147d75d132254cc80dc/spec_classes-{{ version }}.tar.gz
-  sha256: 78e8111bf571d6a022b42346b9d4f317dd6e4ba6bacd612729d6c08ee084d280
+  url: https://files.pythonhosted.org/packages/a2/5d/e64dd653a45fcfbfe2eee7e6f095faf9ee7a5d562be896679cfdbd3e5261/spec_classes-{{ version }}.tar.gz
+  sha256: 2ee1d09874f5ae103e4b8d821ddb18114dc27d7b93146428314168d8f5982e3d
 
 build:
   number: 0
